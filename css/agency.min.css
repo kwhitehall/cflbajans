@@ -1014,3 +1014,7 @@ img::-moz-selection {
      width: 1170px;
   }
 }
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
