@@ -6,13 +6,11 @@ This CFLBajans website is maintained by the [CFLBajans Team](https://github.com/
 
 ## Developing Using Source Files
 ### Requirements
-To view this site from the source files, you will need to have npm installed globally along with Gulp.js. To start:
+To view this site from the source files, you will need to have npm installed. To start:
 * Run `npm install` in the root directory
-* Run `gulp dev` and edit the files as needed
 
 If you need to update the plugins included with this site, simply run the following tasks:
 * First run `npm update` to update the dependencies
-* Then run `gulp copy` to copy the new versions to their proper destinations
 
 ### Run
 * Open index.html in a browser
