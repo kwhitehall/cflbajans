@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="CFLBajans">
 
-    <title>Featured Bajan</title>
+    <title>Featured CFL Bajan</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,18 +101,20 @@
                     <p class="large text-muted"></p>
                     <table class="table text-center">
                         <tr>
-                                <td style="width:25%">&nbsp;<img src="img/about/board/dale.jpg" alt="Dr. Dale Husbands" class="img-responsive img-circle">
-                                </td>
-                                <td style="vertical-align:center">
-                                    <br>
-                                    Dr. Dale Husbands who was born in Barbados, West Indies, migrated to the United States of America in 1975 and settled in Brooklyn, New York. In 1980, Dr. Husbands joined the United States Air Force and worked as a Maintenance Management Information Systems Computer Specialist until his separation from the military in 1989. He subsequently worked for Lucerne Valley Unified School District as a Computer Coordinator, and taught computer science courses as an adjunct professor at 
-                                    <!-- <a href="" data-toggle="popover" data-content="???">More</a>  -->
-                                    <!-- <a href="#" role="button" class="btn popovers" data-toggle="popover" title="" data-content="test content <a href='recipe.html' title='test add link'>link on content</a>" data-original-title="test title">test link</a> -->
-
-                                    <!-- <a href="featured-bajan/dale-husbands.html" data-toggle="modal" data-target="#my-modal-fullscreen"> More </a> -->
-                                    <!-- <a href="#" data-toggle="modal" data-load-url="featured-bajan/dale-husbands.html" data-target="#my-modal-fullscreen">More</a> -->
-                                    <a data-toggle="modal" href="featured-bajan/dale-husbands.html" data-target="#my-modal-fullscreen">More</a> 
-                                </td>
+                            <td style="width:25%">&nbsp;<img src="img/about/board/dale.jpg" alt="Dr. Dale Husbands" class="img-responsive img-circle">
+                            </td>
+                            <td style="vertical-align:center">
+                                <br>
+                                Dr. Dale Husbands who was born in Barbados, West Indies, migrated to the United States of America in 1975 and settled in Brooklyn, New York. In 1980, Dr. Husbands joined the United States Air Force and worked as a Maintenance Management Information Systems Computer Specialist until his separation from the military in 1989. He subsequently worked for Lucerne Valley Unified School District as a Computer Coordinator, and taught computer science courses as an adjunct professor at <a href="#" data-toggle="modal" data-load-url="featured-bajans/dale-husbands.html" data-target="#my-modal-fullscreen">More</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:25%">&nbsp;<img src="img/about/board/dennis.jpg" alt="Dennis Morris" class="img-responsive img-circle">
+                            </td>
+                            <td style="vertical-align:center">
+                                <br>
+                                Dennis' story is coming to cflbajans.com <a href="#" data-toggle="modal" data-load-url="featured-bajans/dennis-morris.html" data-target="#my-modal-fullscreen">soon</a>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -145,6 +147,16 @@
         </div>
     </footer>
 
+    <!-- Modal fullscreen -->
+    <div class="modal fade" id="my-modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="my-modal-fullscreen" aria-hidden="true">  
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+          </div>
+        </div>  
+    </div>
+
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -161,51 +173,12 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
- <script type="text/javascript">
-//     $("[data-toggle=popover]")
-// .popover({html:true})
-
-$("#my-modal-fullscreen").on('show.bs.modal', function () {
-  setTimeout( function() {
-    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-  }, 0);
-});
-$("#my-modal-fullscreen").on('hidden.bs.modal', function () {
-  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-});
-
-// $('#my-modal-fullscreen').on('show.bs.modal', function (e) {
-//     var loadurl = $(e.relatedTarget).data('load-url');
-//     $(this).find('.modal-body').load(loadurl);
-// });
-
-// $('#my-modal-fullscreen').modal(remote)
-</script>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
-
-<!-- Modal fullscreen -->
-<div class="modal modal-fullscreen fade" id="my-modal-fullscreen" tabindex="-1" role="dialog"> 
- <!-- aria-labelledby="myModalLabel" aria-hidden="true">  -->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header"> -->
-        <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
-        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
-         <!-- <h3 class="section-heading text-center">Dale Husbands, PhD.</h3>
-      </div> 
-      <div class="modal-body"></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div> -->
-      </div>
-    </div>  
-</div>  
-
- 
+    <script type="text/javascript">
+        $('#my-modal-fullscreen').on('show.bs.modal', function (e) {
+        var loadurl = $(e.relatedTarget).data('load-url');
+        $(this).find('.modal-body').load(loadurl);
+    });
+    </script>
 </body>
 
 </html>
