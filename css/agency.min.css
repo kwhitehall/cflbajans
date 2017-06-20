@@ -1,4 +1,5 @@
 /*!
+ * Some parts of this css are modified from the:
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -1042,6 +1043,7 @@ table.center {
   margin-top: 40px;
   width: 100%;
   max-width: 960px;
+  height: auto;
   margin: 0 auto;
   position: relative;
   -webkit-transition: all 750ms cubic-bezier(1, 0, 0, 1);
@@ -1127,9 +1129,8 @@ table.center {
   }
 }
 
-/*Where carousel*/
+/*about - Where carousel*/
 #where-carousel {
-    /*padding: 0 10px 30px 10px;*/
     width: : 100%;
     margin-top: 30px;
 }
