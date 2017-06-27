@@ -273,7 +273,7 @@
 
     <!-- Where we are from Section -->    
     <section id="where">
-        <div class="container responsive" style="width:100%">
+        <div class="container responsive" style="width:100%;padding-left: 0px;padding-right: 0px;">
             <div class="row" >
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Where we are from</h2>
@@ -281,87 +281,94 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12" data-wow-delay="2000">
-                    <div class="carousel slide" data-ride="carousel" id="where-carousel">
-                        <!-- Bottom Carousel Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#where-carousel" data-slide-to="0"><img class="img-responsive" src="img/about/coucou.jpg" alt="Cou Cou and flying fish">
-                            </li>
-                            <li data-target="#where-carousel" data-slide-to="1" class="active"><img class="img-responsive" src="img/about/Barbados-logo.jpg" alt="Barbados Logo">
-                            </li>
-                            <li data-target="#where-carousel" data-slide-to="2"><img class="img-responsive" src="img/about/Dale.jpg" alt="Meet Dale Husbands" >
-                            </li>
-                        </ol>
-
-                        <!-- Carousel Slides / Quotes -->
-                        <div class="carousel-inner text-center">
-                            <!-- Quote 1 -->
-                            <div class="item">
-                                <div class="row" id="div1">
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                        <div class="section-heading" style="text-align:center"><h3>Food!</h3></div>
-                                        Food is a big, <strong>BIG</strong> part of Barbadian culture, even <a href="https://www.buzzfeed.com/kelciewillis/things-all-people-from-barbados-know-to-be-true?utm_term=.em27xnPrz#.uo0DgMGxq" target="_blank">BuzzFeed</a> knows it! Want to learn how to make Cou cou and flying fish - the national dish of Barbados - or other delicious Bajan dishes? Stay tuned for <a href="recipes.html#recipes">recipes</a> to Barbadian delicacies from the CFL Bajans members and more!
-                                        <br>
-                                        <h4>Featured recipe from a CFL Bajan: </h4>
-                                        <a href="recipes.html#recipes">
-                                            Cou cou and flying fish
-                                        </a>
-                                        <br>
-                                        <br>
-                                    </div>
+                <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="0">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="img/about/coucou.jpg" alt="Cou Cou and flying fish">
+                            </div>
+                        </li>
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="1" class="active">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="img/about/Barbados-logo.jpg" alt="Barbados Logo">
+                            </div>
+                        </li>
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="img/about/Dale.jpg" alt="Meet Dale Husbands">
+                            </div>
+                        </li>
+                    </ol>
+                    
+                    <div class="carousel-inner">
+                        <div class="item slides"  style="width:100%">
+                            <div class="slide-1"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <div class="section-heading" style="text-align:center"><h3>Food!</h3></div>
+                                    Food is a big, <strong>BIG</strong> part of Barbadian culture, even <a href="https://www.buzzfeed.com/kelciewillis/things-all-people-from-barbados-know-to-be-true?utm_term=.em27xnPrz#.uo0DgMGxq" target="_blank" style="text-decoration:none">BuzzFeed</a> knows it! Bajan cuisine includes a unique blend of foods with African, Indian and British influences. The national dish is Cou-cou and flying fish. Cou-cou is made from cornmeal and okras. Although the national dish pairs it with flying fish in a tomato-based sauce, it is also commonly served with salt fish, smoked red herring, or stew. 
+                                    <br>
+                                    Want to learn how to make Cou cou or other delicious Bajan dishes? Stay tuned for <a href="recipes.html#recipes"  style="text-decoration:none">recipes</a> to Barbadian delicacies from the CFL Bajans members and more!
+                                    <br>
+                                    <br>
+                                    <h4>Featured recipe from a CFL Bajan: </h4>
+                                    <a href="recipes.html#recipes"  style="text-decoration:none">
+                                        Cou cou and flying fish
+                                    </a>
                                 </div>
                             </div>
-
-                            <!-- Bajan facts -->
-                            <div class="item active">                                        
-                                <div class="row" id="div2">
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                        <div class="section-heading" style="text-align:center"><h3>Barbadian Fun Facts!</h3></div>
-                                        <div style="text-align:center">
-                                            <ul>
-                                                <li>Barbados is the most easterly island in the Caribbean Sea.</li>
-                                                <li>The island is named after the Bearded Fig Tree once found in abundance on the island.</li>
-                                                <li>A Bajan is a person from Barbados - officially a Barbadian. </li>
-                                                <li>Barbados only flew the British flag until November 30th 1966 when independence was gained.</li>
-                                                <li>Superstar Rihanna is from Barbados.</li>
-                                                <li>The national sport of Barbados is cricket.</li>
-                                                <li>Barbados was the only vacation destination in the Caribbean with a scheduled Concorde service. A British Airways Concorde still resides in Barbados in the Concorde museum.</li>
-                                            </ul>
-                                            <a class="btn" style="background-color:#000000;height:40px;color:#fed136;margin:2em;text-decoration:none" href="http://gisbarbados.gov.bb/government/" target="_blank">More about Barbados!</a>
-                                
-                                            <a class="btn" style="background-color:#000000;height:40px;color:#fed136;margin:2em;text-decoration:none" href="https://www.visitbarbados.org/" target="_blank">Visit Barbados!</a> 
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-                            
-                            <!-- Featured Bajan -->
-                            <div class="item">                                   
-                                <div class="row" id="div3">
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                        <div class="section-heading" style="text-align:center"><h3>What's your story?</h3></div>
-                                        <a href="featured-bajans.html#top" style="text-decoration:none; color:#000000">
-                                        Everyone has a story to tell! This section highlights the stories of some of Barbadians, including our CFL Bajans members.
-                                        <br>
-                                        <br>
-                                        <h4>Current Featured CFL Bajan:</h4>
-                                        <a href="featured-bajans.html#top" style="text-decoration:none">
-                                            <p>Meet Dr. Dale Husbands</p>                                        
-                                        </a>
-                                        <br>
+                        </div>
+                        <div class="item slides active">
+                            <div class="slide-2"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <div class="section-heading text-muted" style="text-align:center"><h3>Barbadian Fun Facts!</h3></div>            
+                                    <ul>
+                                        <li>Barbados is the most easterly island in the Caribbean Sea.</li>
+                                        <li>The island is named after the Bearded Fig Tree once found in abundance on the island.</li>
+                                        <li>A Bajan is a person from Barbados - officially a Barbadian. </li>
+                                        <li>Barbados only flew the British flag until November 30th 1966 when independence was gained.</li>
+                                        <li>Superstar Rihanna is from Barbados.</li>
+                                        <li>The national sport of Barbados is cricket.</li>
+                                    </ul>                                   
+                                    <div style="text-align:center">
+                                        <a class="btn" style="background-color:#000000;height:40px;color:#fed136;margin:2em;text-decoration:none" href="http://gisbarbados.gov.bb/government/" target="_blank">More about Barbados!</a>
+                                        <a class="btn btn-xs" style="background-color:#000000;height:40px;color:#fed136;margin:2em;text-decoration:none" href="https://www.visitbarbados.org/" target="_blank">Visit Barbados!</a> 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="item slides">
+                            <div class="slide-3"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <div class="section-heading" style="text-align:center"><h3>What's your story?</h3></div>
+                                    <a href="featured-bajans.html#top" style="text-decoration:none;color:#fff">
+                                    Everyone has a story to tell! This section highlights the stories of some of Barbadians, including our CFL Bajans members.</a>
+                                    <br><a href="featured-bajans.html#top" style="text-decoration:none">Click here to see all our stories.</a>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4>Current Featured CFL Bajan:</h4>
+                                    <a href="#" style="text-decoration:none" data-toggle="modal" data-load-url="featured-bajans/dale-husbands.html" data-target="#my-modal-fullscreen">
+                                        <p>Meet Dr. Dale Husbands</p>                                       
+                                    </a>
+                                    Dr. Dale Husbands who was born in Barbados, West Indies, migrated to the United States of America in 1975 and settled in Brooklyn, New York. <a href="#" style="text-decoration:none" data-toggle="modal" data-load-url="featured-bajans/dale-husbands.html" data-target="#my-modal-fullscreen">More...</a> 
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
 
-                        <!-- Carousel Buttons Next/Prev -->
-                        <a data-slide="prev" href="#where-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                        <a data-slide="next" href="#where-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-                    </div>
+                        <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div> 
                 </div>
             </div>
         </div>
-        &nbsp;
         &nbsp;
         <div style="text-align:center">
             <a class="btn" style="background-color:#000000;height:40px;color:#fed136;margin:2em" href="index.html#about"><strong> &lt; </strong></a>
@@ -378,7 +385,9 @@
                 <p> Join us at one of our monthly meetings held on the 3rd Saturday of each month at 6:30 pm at St. Mary’s of the Angels Church, 6316 Matchett Road, Orlando, Florida. 
                 <br>
                 <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.353501914315!2d-81.3659338858543!3d28.468898882482623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77c954c1bbdd3%3A0x4d19b19235d7e3b7!2sSt.+Mary+of+the+Angels!5e0!3m2!1sen!2sus!4v1495747175850" width="300" height="225" style="border:0" allowfullscreen></iframe>
+                <div class="embed-container" style="text-align:center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.353501914315!2d-81.3659338858543!3d28.468898882482623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77c954c1bbdd3%3A0x4d19b19235d7e3b7!2sSt.+Mary+of+the+Angels!5e0!3m2!1sen!2sus!4v1495747175850" style="border:0" allowfullscreen></iframe>
+                </div>
                 </p>
                 <h3 class="section-subheading text-muted">The next meeting is <span style="color:blue"><strong> June 17th, 2017 at 6:30pm</strong></span>. We hope to see you there!</h3>            
             </div>
@@ -456,6 +465,15 @@
         </div>
     </footer>
 
+    <!-- Modal fullscreen -->
+    <div class="modal fade" id="my-modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="my-modal-fullscreen" aria-hidden="true">  
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+          </div>
+        </div>  
+    </div>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -471,6 +489,77 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script type="text/javascript">
+        $('#my-modal-fullscreen').on('show.bs.modal', function (e) {
+        var loadurl = $(e.relatedTarget).data('load-url');
+        $(this).find('.modal-body').load(loadurl);
+    });
+    </script>
+
+    <script>
+//     function carouselNormalization() {
+// var items = $('#carousel-inner .item'), //grab all slides
+//     heights = [], //create empty array to store height values
+//     tallest; //create variable to make note of the tallest slide
+
+// if (items.length) {
+//     function normalizeHeights() {
+//         items.each(function() { //add heights to array
+//             heights.push($(this).height()); 
+//         });
+//         tallest = Math.max.apply(null, heights); //cache largest value
+//         items.each(function() {
+//             $(this).css('min-height',tallest + 'px');
+//         });
+//     };
+//     normalizeHeights();
+
+//     $(window).on('resize orientationchange', function () {
+//         tallest = 0, heights.length = 0; //reset vars
+//         items.each(function() {
+//             $(this).css('min-height','0'); //reset min-height
+//         }); 
+//         normalizeHeights(); //run it again 
+//     });
+// }
+// }
+// function carouselNormalization() {
+//   var items   = $('#carousel-id .item'),              // grab all the slides
+//       heights = [],                                   // array to store heights
+//       tallest;                                        // tallest slide
+
+//   if (items.length) {
+//     function normalizeHeights() {
+//       items.each(function() {
+//         heights.push($(this).height());               // add each slide's height
+//       });                                             // to the array
+
+//       tallest = Math.max.apply(null, heights);        // find the largest height
+
+//       items.each(function() {
+//         $(this).css('min-height', tallest + 'px');    // set each slide's minimum
+//       });                                             // height to the largest
+//     };
+
+//     normalizeHeights();
+
+//     $(window).on('resize orientationchange', function() {
+//       tallest = 0, heights.length = 0;               // reset the variables
+
+//       items.each(function() {
+//         $(this).css('min-height', '0');              // reset each slide's height
+//       });
+
+//       normalizeHeights();                            // run it again
+//     });
+//   }
+// }
+
+// window.onload = function() {
+//   carouselNormalization();
+// }
+//     </script>
 
 </body>
 
