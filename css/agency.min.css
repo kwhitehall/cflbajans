@@ -146,6 +146,14 @@ fieldset[disabled] .btn-primary:hover {
     font-size: 18px;
     padding: 20px 40px
 }
+.btn-xs {
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 10px 20px
+}
 
 .btn-xl.active,
 .btn-xl:active,
@@ -506,7 +514,7 @@ footer ul.quicklinks {
     background-color: #3e3bf8;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 4px solid #f1f1f1;
     text-align: center
 }
 
@@ -868,31 +876,12 @@ img::-moz-selection {
     background: 0 0
 }
 
-#div1 {
-    background-color: #869feb;
-    padding-bottom:135px;
-    overflow-y:hidden;
-}
-
-#div2 {
-    background-color: #fed136;
-    padding-bottom:135px;
-    overflow-y:hidden
-}
-
-#div3 {
-    background-color: #869feb;
-    padding-bottom:135px;
-    overflow-y:hidden
-}
-
 .btn-xl.text-break-md {
     white-space: normal
 }
 
 .embed-container {
     position: relative;
-    height: 0;
     overflow: hidden
 }
 
@@ -910,7 +899,17 @@ img::-moz-selection {
     left: 0;
     width: 100%;
     height: 100%;
+    display: block;
     border: 0
+}
+
+@media only screen and (max-width:390px){
+    .embed-container{
+        position: relative;
+        width: 250px;
+        height: 175px;
+        overflow: hidden
+    }
 }
 
 .notification-bar {
@@ -1129,69 +1128,128 @@ table.center {
   }
 }
 
-/*about - Where carousel*/
-#where-carousel {
-    width: : 100%;
-    margin-top: 30px;
+#thumbnail-preview-indicators {
+  position: relative;
+  overflow: hidden;
 }
-#where-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
+#thumbnail-preview-indicators .slides .slide-1, 
+#thumbnail-preview-indicators .slides .slide-2,
+#thumbnail-preview-indicators .slides .slide-3 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-#where-carousel .carousel-control.left {
-    left: -60px;
+    #thumbnail-preview-indicators,
+    #thumbnail-preview-indicators .slides,
+    #thumbnail-preview-indicators .slides .slide-1, 
+    #thumbnail-preview-indicators .slides .slide-2,
+    #thumbnail-preview-indicators .slides .slide-3 {
+      height: 480px;
+    }
+#thumbnail-preview-indicators .slides .slide-1 {
+  background-color:#869feb;
+  width: 100%;
 }
-#where-carousel .carousel-control.right {
-    right: -60px;
+#thumbnail-preview-indicators .slides .slide-2 {
+  background-color:#fed126;
+  width:100%;
 }
-#where-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    text-align: center;
-    margin-right: -19px;
+#thumbnail-preview-indicators .slides .slide-3 {
+  background-color:#869feb;
+  width: 100%
+
 }
-#where-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    border: 4px solid #CCC;
-    border-radius: 50px;
-    opacity: 0.4;
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.4s;
+#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+  top: 0%;
+  bottom: inherit;
 }
-#where-carousel .carousel-indicators .active {
-    background: #333333;
-    width: 128px;
-    height: auto;
-    border-radius: 100px;
-    border-color: #000000;
-    opacity: 1;
-    overflow: hidden;
+#thumbnail-preview-indicators .carousel-indicators li,
+#thumbnail-preview-indicators .carousel-indicators li.active {
+  position: relative;
+  width: 100px;
+  height: 8px;  
 }
+#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  display: none;
+  opacity: 0;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -50px;
 }
-.carousel-inner {
-    min-height: 300px;
+#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+  display: block;
+  opacity: .8;
 }
-@media screen and (max-width: 768px) and (min-width: 393px){
-    .carousel-indicators {
-        max-height: 50% !important;
-        width: 80%;
-        margin-top: 50px !important
+#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+  opacity: 1;
+}
+@media screen and (max-width : 366px) {    
+    #thumbnail-preview-indicators .carousel-indicators li,
+    #thumbnail-preview-indicators .carousel-indicators li.active {
+      width: 50px;
+      height: 8px;
+      position: relative;
+    }
+    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+       width: 50px;
+       left: 50%;
+       margin-top: -50px;
+       margin-left: -25px;
+    }
+
+    #thumbnail-preview-indicators,
+    #thumbnail-preview-indicators .slides,
+    #thumbnail-preview-indicators .slides .slide-1, 
+    #thumbnail-preview-indicators .slides .slide-2,
+    #thumbnail-preview-indicators .slides .slide-3 {
+      height: 730px;
     }
 }
-@media screen and (max-width: 392px) and (min-width: 320px){
-    .carousel-indicators {
-        max-height: 25% !important;
-        white-space:nowrap;
-        padding:0px;
-        margin-top:100px !important;
-        margin-bottom:50px !important;
+@media screen and (min-width : 367px) and (max-width:430px) {    
+    #thumbnail-preview-indicators .carousel-indicators li,
+    #thumbnail-preview-indicators .carousel-indicators li.active {
+      width: 50px;
+      height: 8px;
+      position: relative;
+    }
+    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+       width: 50px;
+       left: 50%;
+       margin-top: -50px;
+       margin-left: -25px;
+    }
+
+    #thumbnail-preview-indicators,
+    #thumbnail-preview-indicators .slides,
+    #thumbnail-preview-indicators .slides .slide-1, 
+    #thumbnail-preview-indicators .slides .slide-2,
+    #thumbnail-preview-indicators .slides .slide-3 {
+      height: 650px;
+    }
+}
+@media screen and (min-width : 430px) and (max-width:560px) {    
+    #thumbnail-preview-indicators .carousel-indicators li,
+    #thumbnail-preview-indicators .carousel-indicators li.active {
+      width: 50px;
+      height: 8px;
+      position: relative;
+    }
+    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+       width: 50px;
+       left: 50%;
+       margin-top: -50px;
+       margin-left: -25px;
+    }
+
+    #thumbnail-preview-indicators,
+    #thumbnail-preview-indicators .slides,
+    #thumbnail-preview-indicators .slides .slide-1, 
+    #thumbnail-preview-indicators .slides .slide-2,
+    #thumbnail-preview-indicators .slides .slide-3 {
+      height: 600px;
     }
 }
