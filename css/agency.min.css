@@ -876,44 +876,12 @@ img::-moz-selection {
     background: 0 0
 }
 
-#div1 {
-    background-color: #869feb;
-    padding-bottom:135px;
-    overflow-y:hidden;
-    /*height:425px*/
-}
-
-#div2 {
-    background-color: #fed136;
-    padding-bottom:135px;
-    overflow-y:hidden;
-    /*height:425px*/
-}
-
-#div3 {
-    background-color: #869feb;
-    padding-bottom:135px;
-    overflow-y:hidden;
-    /*height: 425px*/
-}
-
-/*@media only screen and (max-width:390px){
-    .embed-container{
-        position: relative;
-        width: 250px;
-        height: 175px;
-        overflow: hidden
-    }
-}*/
 .btn-xl.text-break-md {
     white-space: normal
 }
 
 .embed-container {
     position: relative;
-    width: 300px;
-    height: 225px;
-    margin: 0 auto;
     overflow: hidden
 }
 
