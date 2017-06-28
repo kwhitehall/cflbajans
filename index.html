@@ -81,7 +81,7 @@
             <div class="text">
                 <p style="padding-top:10px; text-align:center; font-family:Verdana; color:blue">
                      Independence Gala Nov 11th 2017
-                     <a href="img/events/gala/gala-2017-flyer.png" target="_blank" class="btn" style="height:30px;color:black;background-color:gray">Learn more</a>
+                     <a href="#" data-toggle="modal" data-load-url="advertisement.html" data-target="#my-modal-fullscreen" class="btn" style="height:30px;color:black;background-color:gray">Learn more</a>
                      <button class="btn btn-close dismisbar" type="button" style="height:30px">&times;</button>
                 </p>
             </div> 
@@ -427,6 +427,15 @@
         </div>
     </footer>
 
+    <!-- Modal fullscreen -->
+    <div class="modal fade" id="my-modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="my-modal-fullscreen" aria-hidden="true">  
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+          </div>
+        </div>  
+    </div>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -449,6 +458,12 @@
                 $(".notification-bar").hide();
             }); 
         });
+    </script>
+    <script type="text/javascript">
+        $('#my-modal-fullscreen').on('show.bs.modal', function (e) {
+        var loadurl = $(e.relatedTarget).data('load-url');
+        $(this).find('.modal-body').load(loadurl);
+    });
     </script>
 
 </body>
