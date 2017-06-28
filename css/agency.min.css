@@ -54,12 +54,12 @@ h6 {
 }
 
 .text-muted {
-    color: #777
+    color: #3a3a3a
 }
 
 .text-primary,
 a {
-    color: #fed136
+    color: #0000c1
 }
 
 p {
@@ -83,7 +83,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503
+    color: #810c12
 }
 
 .img-centered {
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .btn-primary {
-    color: #fff;
+    color: #222;
     background-color: #fed136;
     border-color: #fed136
 }
@@ -109,7 +109,7 @@ a:hover {
 .btn-primary:focus,
 .btn-primary:hover,
 .open .dropdown-toggle.btn-primary {
-    color: #fff;
+    color: #222;
     background-color: #fec503;
     border-color: #f6bf01
 }
@@ -135,11 +135,11 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn-primary .badge {
     color: #fed136;
-    background-color: #fff
+    background-color: #222
 }
 
 .btn-xl {
-    color: #fff;
+    color: #222;
     background-color: #fed136;
     border-color: #fed136;
     border-radius: 3px;
@@ -147,7 +147,7 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px
 }
 .btn-xs {
-    color: #fff;
+    color: #222;
     background-color: #fed136;
     border-color: #fed136;
     border-radius: 3px;
@@ -160,7 +160,7 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:focus,
 .btn-xl:hover,
 .open .dropdown-toggle.btn-xl {
-    color: #fff;
+    color: #222;
     background-color: #fec503;
     border-color: #f6bf01
 }
@@ -186,7 +186,7 @@ fieldset[disabled] .btn-xl:hover {
 
 .btn-xl .badge {
     color: #fed136;
-    background-color: #fff
+    background-color: #222
 }
 
 .navbar-custom {
@@ -241,13 +241,13 @@ fieldset[disabled] .btn-xl:hover {
 
 .navbar-custom .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    color: #222;
     background-color: #fed136
 }
 
 .navbar-custom .navbar-nav>.active>a:focus,
 .navbar-custom .navbar-nav>.active>a:hover {
-    color: #fff;
+    color: #222;
     background-color: #fec503
 }
 
@@ -404,7 +404,7 @@ section h3.section-subheading {
     text-align: center;
     top: 50%;
     margin-top: -12px;
-    color: #fff
+    color: #222
 }
 
 #gallery .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -929,7 +929,7 @@ img::-moz-selection {
 
 .btn.btn-close {
     background-color: transparent;
-    color: red;
+    color: #e74c3c;
     font-weight: bold
 }
 
@@ -1021,7 +1021,7 @@ table.center {
 }
 
 .work .filter a {
-    color: blue;
+    color: #0000c1;
     font-size: .85em;
     text-decoration: none;
     text-transform: uppercase;
@@ -1030,11 +1030,11 @@ table.center {
 }
 
 .work .filter a:hover {
-    color: #B9121B;
+    color: #810c12;
 }
 
 .work .filter a.active {
-    color: #B9121B;
+    color: #810c12;
     background: url('../img/checked.png') no-repeat 0px 3px;
 }
 
