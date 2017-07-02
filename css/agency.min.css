@@ -1253,3 +1253,8 @@ table.center {
       height: 600px;
     }
 }
+.overlay {
+    position: relative;
+    width: 100%;
+    /*display: inline-block;*/
+}
