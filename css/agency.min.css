@@ -1255,6 +1255,4 @@ table.center {
 }
 .overlay {
     position: relative;
-    width: 100%;
-    /*display: inline-block;*/
 }

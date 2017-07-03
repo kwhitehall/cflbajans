@@ -129,24 +129,20 @@
                     </div>
                 </div>
                 <!-- Page Content -->
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=479021958846609" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img1" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/1052880_479022462179892_437214981_o.jpg?oh=b648fe2e2a00c31e135df8fbb0c31f52&oe=59D11B86" alt="Give Kids the World - Adopt a Villa day">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2013</h2>
+                        </div>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=479021958846609" target="_blank">
-                        <img class="img-responsive" src="img/events/give-kids/give-kids-2013.jpg" alt="Give Kids the World - Adopt a Villa day">
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=554174291331375" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img2" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/1399554_554197461329058_422396947_o.jpg?oh=0947c11304c5f2ca9c046661970209cd&oe=59A1DE8E" alt="Give Kids the World - Holiday decorating">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136"></h2>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -195,6 +191,19 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var allImgs = ['#img1','#img2']; 
+            var h1 = $('#img1').height();
+
+            for (i = 1; i < allImgs.length; i++) { 
+                if ($(allImgs[i]).height() != h1) {
+                    $(allImgs[i]).height(h1);  
+                }
+            }
+        })
+    </script>
 
 </body>
 
