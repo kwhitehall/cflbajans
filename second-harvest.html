@@ -124,24 +124,20 @@
                     </div>
                 </div>
                 <!-- Page Content -->
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=482473171834821" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img1" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/977035_482474221834716_1696852723_o.jpg?oh=8e9e83ac1a052c67a361f431343b9e83&oe=59E94D24" alt="Second Harvest Volunteering 2013">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2013</h2>
+                        </div>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" target="_blank">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=482473171834821" target="_blank">
-                        <img class="img-responsive" src="img/events/second-harvest/second-harvest-2014.jpg" alt="Second Harvest Volunteering 2014">
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=1404507616298034" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img2" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/19780384_1404510576297738_3283571109553852117_o.jpg?oh=b5988859a57e018e639036a27f4d13ba&oe=59CB07C5" alt="Second Harvest Volunteering 2017">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2017</h2>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -189,6 +185,19 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var allImgs = ['#img1','#img2']; 
+            var h1 = $('#img1').height();
+
+            for (i = 1; i < allImgs.length; i++) { 
+                if ($(allImgs[i]).height() != h1) {
+                    $(allImgs[i]).height(h1);  
+                }
+            }
+        })
+    </script>
 
 </body>
 

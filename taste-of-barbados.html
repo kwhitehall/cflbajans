@@ -124,27 +124,27 @@
                     </div>
                 </div>
                 <!-- Page Content -->
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=862597070489094" target="_blank">
-                        <div class="overlay">
-                            <img class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/11705752_862599747155493_8564705949715146628_o.jpg?oh=31554005132ad3dbe543ce0f8b3acc37&oe=599C114F" alt="Taste of Barbados 2015" style="height:200px;width:400px">                        
-                            <h2 style="position:absolute;top:75px;left:100px;width:100%;color:#fed136">2015</h2>
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=862597070489094" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img1" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/11705752_862599747155493_8564705949715146628_o.jpg?oh=31554005132ad3dbe543ce0f8b3acc37&oe=599C114F" alt="Taste of Barbados 2015">                        
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2015</h2>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=995168900565243" target="_blank">
-                        <div class="overlay">
-                            <img class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.0-9/995391_995172543898212_3402892571033848984_n.jpg?oh=3a75509aee66a98ad4783ba2d9b9e014&oe=59A0D161" alt="Taste of Barbados 2016" style="height:200px;width:400px">
-                            <h2 style="position:absolute;top:75px;left:100px;width:100%;color:#fed136">2016</h2>
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=995168900565243" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img2" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.0-9/995391_995172543898212_3402892571033848984_n.jpg?oh=3a75509aee66a98ad4783ba2d9b9e014&oe=59A0D161" alt="Taste of Barbados 2016">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2016</h2>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=1402958949786234" target="_blank">
-                        <div class="overlay">
-                            <img class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/19620993_1402969999785129_7001100152498734460_o.jpg?oh=515b937b0b08114579668bbeed4211ae&oe=5A07BF21" alt="Taste of Barbados 2017" style="height:200px;width:400px">
-                            <h2 style="position:absolute;top:75px;left:100px;width:100%;color:#fed136">2017</h2>
+                <div class="col-m-3 col-sm-4 thumb text-center">
+                    <a href="https://www.facebook.com/pg/CFLBAJANS/photos/?tab=album&album_id=1402958949786234" target="_blank">
+                        <div class="overlay img-thumbnail">
+                            <img id="img3" class="img-responsive" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t31.0-8/19620993_1402969999785129_7001100152498734460_o.jpg?oh=515b937b0b08114579668bbeed4211ae&oe=5A07BF21" alt="Taste of Barbados 2017">
+                            <h2 style="position:absolute;top:25%;left:0;width:100%;color:#fed136">2017</h2>
                         </div>
                     </a>
                 </div>               
@@ -236,6 +236,19 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var allImgs = ['#img1','#img2','#img3']; 
+            var h1 = $('#img1').height();
+
+            for (i = 1; i < allImgs.length; i++) { 
+                if ($(allImgs[i]).height() != h1) {
+                    $(allImgs[i]).height(h1);  
+                }
+            }
+        })
+    </script>
 
 </body>
 
