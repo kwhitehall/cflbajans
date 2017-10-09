@@ -208,17 +208,16 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=dDhyOXJibXQyYWppbjRiNzRoODJ0bmI1Y2cgY2ZsYmFqYW5zLnNvY2lhbG1lZGlhQG0&tmsrc=cflbajans.socialmedia%40gmail.com" target="_blank">
-                                    <img class="img-circle img-responsive" src="img/events/flyers/picnic-2017.png" alt="CFLBajans picnic">
+                                 <a href="#" data-toggle="modal" data-load-url="advertisement.html" data-target="#my-modal-fullscreen" style="height:30px;color:#c8c8c8;background-color:#323232"><img class="img-circle img-responsive" src="img/events/flyers/gala-2017-flyer-square.png" alt="CFLBajans Independence Gala">
                                 </a> 
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>CFL Bajans picnic</h4>
-                                    <h4 class="subheading">September 23rd, 2017</h4>
+                                    <h4>CFL Bajans Independence Gala</h4>
+                                    <h4 class="subheading">November 11th, 2017</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">From 1:00pm - 7:00pm we come together for festivities in <a href="https://www.google.com/maps/place/Barnett+Park/@28.5586101,-81.4454671,17z/data=!3m1!4b1!4m5!3m4!1s0x88e7799aed80b0db:0xd031339d00b13db7!8m2!3d28.5586054!4d-81.4432784" target="_blank" style="text-decoration:none">Barnett Park, Pavilion 11</a>. Food and drinks are provided. Tickets - $15 per a person, children under 12 are free.</p>
+                                    <p class="text-muted">From 6:00pm - 9:00pm we come together to celebrate Barbados' 51st year of independence at <a href="https://www.google.com/maps/place/Rosen+Centre+Hotel/@28.4245257,-81.4677425,18.51z/data=!4m5!3m4!1s0x88e77e36c55bc137:0x9406019292368946!8m2!3d28.423876!4d-81.464259" target="_blank" style="text-decoration:none"> The Rosen Centre Hotel</a>. Live entertainment by Anderson 'Mr. Blood' Armstrong. Tickets $75 per a person.</p>
                                 </div>
                             </div> 
                         </li>
@@ -512,6 +511,12 @@
         var loadurl = $(e.relatedTarget).data('load-url');
         $(this).find('.modal-body').load(loadurl);
     });
+    </script>
+    <script type="text/javascript">
+        $("#my-modal-fullscreen").on('click',"a[data-window='external']", function() {
+            window.open($(this).attr('href')); 
+            return false; 
+        });
     </script>
 
 </body>
